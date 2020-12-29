@@ -1,0 +1,33 @@
+{
+  "name": "convtemp",
+  "version": "1.0.0",
+  "description": "A simple package for converting temperatures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "celsius",
+    "fahrenheit",
+    "kelvin",
+    "temperatures",
+    "temp",
+    "convert",
+    "CelsiusToFahrenheit",
+    "KelvinToFahrenheit",
+    "CelsiusToKelvin",
+    "FahrenheitToKelvin",
+    "FahrenheitToCelsius",
+    "KelvinToCelsius"
+  ],
+  "author": "code-alt",
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-alt/ConvTemp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/code-alt/ConvTemp/issues"
+  },
+  "homepage": "https://github.com/code-alt/ConvTemp#readme"
+}

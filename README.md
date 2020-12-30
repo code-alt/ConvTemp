@@ -1,4 +1,4 @@
-# ConvTemp
+# ConvTemp (WIP)
 
 Use it for converting temps, it does it.
 

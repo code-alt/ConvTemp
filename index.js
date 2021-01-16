@@ -1,4 +1,4 @@
-exports.convert = (temp, type, totype) => {
+module.exports = (temp, type, totype) => {
   if (typeof type == "string" && typeof totype == "string") {
     throw new Error("ConvTemp temp convertion failed.");
   }

@@ -1,3 +1,7 @@
+```bash
+npm install convtemp
+```
+
 # ConvTemp (WIP)
 
 Use it for converting temps, it does it.

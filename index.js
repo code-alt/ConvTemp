@@ -1,4 +1,10 @@
 exports.convert = (temp, type, totype) => {
+  if (typeof type == "string" && typeof totype == "string") {
+    throw new Error("ConvTemp temp convertion failed.");
+  }
+  if (typeof temp != "string" && typeof temp != "number") {
+    throw new Error("The temp value (to convert) must be a String or a Number value.");
+  }
   switch (type) {
     case 'Kelvin':
       switch (totype) {
@@ -12,6 +18,8 @@ exports.convert = (temp, type, totype) => {
           var _t = temp - 273.15;
           return _t;
           break;
+        default:
+          return temp;
       }
       break;
       case 'Celsius':
@@ -24,6 +32,8 @@ exports.convert = (temp, type, totype) => {
           var _t = temp + 273.15;
           return _t;
           break;
+        default:
+          return temp;
       }
       break;
       case 'Fahrenheit':
@@ -37,7 +47,11 @@ exports.convert = (temp, type, totype) => {
           _t += 273.15;
           return _t;
           break;
+        default:
+          return temp;
       }
       break;
+    default:
+      return temp;
   }
 }

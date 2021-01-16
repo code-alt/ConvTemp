@@ -1,8 +1,8 @@
-exports.convert = (temp, type, totype) => {
-  if (typeof type == "string" && typeof totype == "string") {
-    throw new Error("ConvTemp temp convertion failed.");
+module.exports = (temp, type, totype) => {
+  if (type instanceof String == true && totype instanceof String == true) {
+    throw new Error("ConvTemp temp convertion failed. The values are malformed.");
   }
-  if (typeof temp != "string" && typeof temp != "number") {
+  if (temp instanceof String == true && temp instanceof Number == true) {
     throw new Error("The temp value (to convert) must be a String or a Number value.");
   }
   switch (type) {

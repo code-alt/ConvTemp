@@ -6,5 +6,5 @@ No dependencies at all. Just use the convert function like so:
 
 ```nodejs
 const convTemp = require("convtemp");
-console.log(convTemp.convert(300, "Kelvin", "Fahrenheit")); // 80.3
+console.log(parseFloat(convTemp.convert(300, "Kelvin", "Fahrenheit").toFixed(1))); // 80.3
 ```

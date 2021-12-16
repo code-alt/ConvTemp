@@ -25,6 +25,7 @@ module.exports = (temp, type, totype) => {
       case 'Celsius':
       switch (totype) {
         case 'Fahrenheit':
+          _t *= 1.8;
           var _t = temp + 32;
           return _t;
           break;
@@ -40,6 +41,7 @@ module.exports = (temp, type, totype) => {
       switch (totype) {
         case 'Celsius':
           var _t = temp - 32;
+          _t /= 1.8;
           return _t;
           break;
         case 'Kelvin':
